@@ -1,0 +1,25 @@
+.form-container {
+    margin: 5%;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .form-input {
+        width: 100%;
+
+        input{
+            width:100%;
+        }
+    }
+
+    .form-textarea {
+        width: 100%;
+
+        textarea{
+            width:100%;
+        }
+    }
+
+    
+    
+}
