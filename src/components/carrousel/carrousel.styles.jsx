@@ -19,6 +19,14 @@ export const CarrouselItem = styled.div`
     width: 1000px;
     height: 600px;
     border-radius: 10px;
+
+    @media screen and (max-width: 1366px){
+        width: 400px;
+    }
+
+    @media screen and (max-width: 1000px){
+        width: 400px;
+    }
 `
 
 export const Slide = styled.div`
@@ -42,6 +50,7 @@ export const LeftArrow = styled(FaArrowAltCircleLeft)`
     z-index: 10;
     cursor: pointer;
     user-select: none;
+
 `
 
 export const RightArrow = styled(FaArrowAltCircleRight)`

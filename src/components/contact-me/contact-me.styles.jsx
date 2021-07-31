@@ -8,6 +8,14 @@ export const ContainerContactMe = styled.div`
     justify-content: center;
     text-align: center;
     margin-left: 30vw;
+
+    @media screen and (max-width: 1024px) {
+        margin-left: 50vw;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-left: 0;
+    }
 `;
 export const ContactFormH1 = styled.h1`
     font-size: 32px;

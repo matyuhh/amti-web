@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const ContactFormContainer = styled.div`
+
 `
 export const ContactFormMail = styled.form`
     width: 90%;
@@ -13,6 +14,9 @@ export const ContactFormWrap = styled.div`
     align-items: center;
     justify-content: center;
     text-align: start;
+    @media screen and (max-width: 1024px){
+        width: 380px;
+    }
 `
 
 export const FormLabel = styled.label`

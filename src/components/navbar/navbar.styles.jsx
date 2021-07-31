@@ -43,11 +43,12 @@ export const MenuTitle = styled.div`
 
 export const MenuH1 = styled.h1`
     font-size: 3rem;
+    margin-bottom: 10px;
 `
 
 export const MenuH2 = styled.h2`
     font-size: 1.8rem;
-    margin-top: -25px;
+    margin-bottom: 20px;
     font-weight: normal;
 `
 

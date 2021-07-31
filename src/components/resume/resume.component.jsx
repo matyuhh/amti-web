@@ -1,13 +1,15 @@
 import React from 'react';
+import CV from '../../assets/experience-cv.PNG';
 
 import { 
     ContainerResume,
+    ImageResume
 } from './resume.styles';
 
 const Resume = () => (
     <>
         <ContainerResume>
-            <h1>En construcción</h1>
+            <ImageResume src={CV}/>
         </ContainerResume>
     </>
 )

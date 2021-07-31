@@ -5,7 +5,8 @@ import {
     SlideWrapper,
     SlideImage,
     SlideTitle,
-    SlideDescription
+    SlideDescription,
+    SlideTextContainer
 } from './slide.styles';
 
 const SlideComponent = ({image, title, description}) => {
@@ -14,8 +15,10 @@ const SlideComponent = ({image, title, description}) => {
             <SlideContainer>
                 <SlideWrapper>
                     <SlideImage src={image}/>
-                    <SlideTitle>{title}</SlideTitle>
-                    <SlideDescription>{description}</SlideDescription>
+                    <SlideTextContainer>
+                        <SlideTitle>{title}</SlideTitle>
+                        <SlideDescription>{description}</SlideDescription>
+                    </SlideTextContainer>
                 </SlideWrapper>
             </SlideContainer>
         </>
