@@ -8,6 +8,7 @@ export const ContainerIntro = styled.div`
     justify-content: center;
     text-align: center;
     margin-left: 30vw;
+    font-family: 'Cairo', sans-serif;
 
     @media screen and (max-width: 1024px) {
         margin-left: 50vw;

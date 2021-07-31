@@ -7,7 +7,7 @@ import {
 const Resume = () => (
     <>
         <ContainerResume>
-            <h1>Resume</h1>
+            <h1>En construcción</h1>
         </ContainerResume>
     </>
 )

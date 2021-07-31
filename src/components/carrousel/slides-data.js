@@ -1,11 +1,10 @@
-import PikachuImage from '../../assets/pikachu.PNG';
-import VamoACalmarno from '../../assets/squirtle.PNG';
+import SlideComponent from '../slide/slide.component';
+import React from 'react';
 
 const slides = [
-    <img src={PikachuImage} alt='generic'/>,
-    <img src={VamoACalmarno} alt='generic'/>,
-    <img src={PikachuImage} alt='generic'/>,
-    <img src={VamoACalmarno} alt='generic'/>
+    <SlideComponent image='' title='1' description='probando'/>,
+    <SlideComponent image='' title='2' description='probando'/>,
+    <SlideComponent image='' title='3' description='probando'/>,
 ]
 
 export default slides;

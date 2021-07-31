@@ -3,7 +3,6 @@ import React, {useState} from 'react';
 import { 
     CarrouselItem,
     ContainerCarrousel,
-    Slide,
     LeftArrow,
     RightArrow
 } from './carrousel.styles';
@@ -37,8 +36,7 @@ const Carrousel = ({ slides }) => {
                     </div>
                     
                 )
-            })}
-            
+            })} 
         </ContainerCarrousel>
     )
 }

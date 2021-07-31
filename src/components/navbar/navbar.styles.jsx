@@ -12,6 +12,8 @@ export const ContainerNavbar = styled.nav`
     align-items: center;
     justify-content: center;
     font-size: 32px;
+    font-family: sans-serif;
+
 
     @media screen and (max-width: 1024px) {
         width: 50vw;
@@ -58,7 +60,7 @@ export const SocialMedia = styled.div`
     height: 70px;
 `
 
-export const SocialLink = styled(Link)`
+export const SocialLink = styled.a`
     border-radius: 50%;
     height: 50px;
     width: 35px;

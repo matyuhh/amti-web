@@ -9,8 +9,8 @@ import {
 const Intro = () => (
     <>
         <ContainerIntro>
-            <IntroH1>Mi nombre es Matías y soy Fullstack Developer</IntroH1>
-            <IntroH2>Y vengo de un background OPS...</IntroH2>
+            <IntroH1>Hola! Soy Matías. Soy Fullstack Developer</IntroH1>
+            <IntroH2>Conoce mi pasión por el desarrollo de webs y aplicaciones, un nuevo desafío, que le he sumado a mi fuerte background en Ops IT.</IntroH2>
         </ContainerIntro>  
     </>   
 )

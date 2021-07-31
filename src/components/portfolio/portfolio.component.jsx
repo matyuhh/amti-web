@@ -5,8 +5,7 @@ import { ContainerPortfolio } from './portfolio.styles';
 
 const Portfolio = () => (
     <ContainerPortfolio>
-        <h1>Portfolio</h1>
-        <Carrousel slides={slides}/>
+        <Carrousel slides={slides}></Carrousel>
     </ContainerPortfolio>   
 )
 
