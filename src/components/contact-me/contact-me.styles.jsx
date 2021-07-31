@@ -19,12 +19,12 @@ export const ContainerContactMe = styled.div`
 `;
 export const ContactFormH1 = styled.h1`
     font-size: 32px;
-    font-family: sans-serif;
+    font-family: Cairo, sans-serif;
     color: #353839;
 `;
 
 export const ContactFormH2 = styled.h2`
     font-size: 24px;
-    font-family: sans-serif;
+    font-family: Cairo, sans-serif;
     color: #353839;
 `;

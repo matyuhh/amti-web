@@ -1,14 +1,13 @@
 import React from 'react';
-
 import { 
     FaGithub, 
-    FaLinkedin 
+    FaLinkedin,
 } from 'react-icons/fa';
 import { 
     BsFileText,
     BsBriefcase,
     BsPersonFill,
-    BsEnvelope
+    BsEnvelope,
 } from "react-icons/bs";
 
 import { 
@@ -20,7 +19,7 @@ import {
     MenuH1,
     MenuH2, 
     MenuItem,
-    MenuItemTitle
+    MenuItemTitle,   
 } from './navbar.styles';
 
 const Navbar = () => {
@@ -37,19 +36,19 @@ const Navbar = () => {
             </MenuTitle>
             
             <MenuContainer>
-                <MenuItem to='/'> 
+                <MenuItem exact to='/' activeClassName='active'> 
                     <BsPersonFill/> 
                     <MenuItemTitle>Sobre mí</MenuItemTitle>
                 </MenuItem>
-                <MenuItem to='/contactme'> 
+                <MenuItem to='/contactme' activeClassName='active'> 
                     <BsEnvelope/>
                     <MenuItemTitle>Contacto</MenuItemTitle> 
                 </MenuItem>
-                <MenuItem to='/resume'> 
+                <MenuItem to='/resume' activeClassName='active'> 
                     <BsFileText/> 
                     <MenuItemTitle>CV</MenuItemTitle>
                 </MenuItem>
-                <MenuItem to='/portfolio'> 
+                <MenuItem to='/portfolio' activeClassName='active'> 
                     <BsBriefcase/> 
                     <MenuItemTitle>Portfolio</MenuItemTitle>
                 </MenuItem>

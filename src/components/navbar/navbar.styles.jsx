@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export const ContainerNavbar = styled.nav`
     position: absolute;
@@ -12,8 +12,8 @@ export const ContainerNavbar = styled.nav`
     align-items: center;
     justify-content: center;
     font-size: 32px;
-    font-family: sans-serif;
-
+    font-family: Cairo, sans-serif;
+    line-height: 1;
 
     @media screen and (max-width: 1024px) {
         width: 50vw;
@@ -72,6 +72,11 @@ export const SocialLink = styled.a`
     padding: 0 10px;
     margin: 0 5px;
     color: white;
+    transition: 0.2s;
+
+    &:hover {
+        opacity: 0.6;
+    }
 `
 
 export const MenuContainer = styled.div`
@@ -82,12 +87,21 @@ export const MenuContainer = styled.div`
     margin-bottom: 30px;
 `;
 
-export const MenuItem = styled(Link)`
+export const MenuItem = styled(NavLink)`
     font-size: 128px;
     color: white;
     justify-content: center;
     align-items: center;
     text-align: center;
+    transition: 0.2s;
+
+    &:hover {
+        opacity: 0.6;
+    }
+
+    &.active{
+        opacity: 0.2;
+    }
 `
 
 export const MenuItemTitle = styled.h3`

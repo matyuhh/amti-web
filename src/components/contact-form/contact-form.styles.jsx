@@ -23,7 +23,7 @@ export const FormLabel = styled.label`
     align-self: flex-start;
     text-align: start;
     font-size: 18px;
-    font-family: sans-serif;
+    font-family: Cairo, sans-serif;
     color: #353839;
 `
 export const FormInputWrapper = styled.div`
@@ -32,14 +32,14 @@ export const FormInputWrapper = styled.div`
 `
 export const FormInput = styled.input`
     width: 100%;
-    font-family: sans-serif;
+    font-family: Cairo, sans-serif;
 `
 export const FormTextArea = styled.textarea`
     width: 100%;
 `
 export const SubmitButton = styled.button`
     align-self: flex-end;
-    font-family: sans-serif;
+    font-family: Cairo, sans-serif;
     width: 70px;
     height: 40px;
     border-radius: 10%;
@@ -49,4 +49,13 @@ export const SubmitButton = styled.button`
     font-size: 18px;
     font-weight: bold;
     color: #353839;
+    transition: 0.4s;
+
+    &:hover {
+        background:#353839;
+        color: white;
+        border: 1px solid #353839;
+        box-shadow: 2px 1px 1px #353839;
+        opacity: 1;
+    }
 `

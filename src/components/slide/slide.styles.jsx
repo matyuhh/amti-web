@@ -42,10 +42,10 @@ export const SlideTextContainer = styled.div`
 export const SlideTitle = styled.h1`
     margin-top: -20px;
     font-size: 32px;
-    font-family: sans-serif;
+    font-family: Cairo, sans-serif;
     font-weight: bold;
 `
 export const SlideDescription = styled.p`
     font-size: 16px;
-    font-family: sans-serif;
+    font-family: Cairo, sans-serif;
 `
