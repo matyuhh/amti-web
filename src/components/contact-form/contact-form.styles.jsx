@@ -33,9 +33,35 @@ export const FormInputWrapper = styled.div`
 export const FormInput = styled.input`
     width: 100%;
     font-family: Cairo, sans-serif;
+    box-shadow: 0.5px 0.5px 0.5px white;
+    border: 1px solid #353839;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+        box-shadow: 0.5px 0.5px 0.5px #353839;
+    }
+
+    &:focus {
+        outline: none;
+        border: 1.2px solid black;
+        box-shadow: 0.5px 0.5px 0.5px #353839;
+    }
 `
 export const FormTextArea = styled.textarea`
     width: 100%;
+    border: 1px solid #353839;
+    box-shadow: 0.5px 0.5px 0.5px white;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+        box-shadow: 0.5px 0.5px 0.5px #353839;
+    }
+
+    &:focus {
+        outline: none;
+        border: 1.2px solid black;
+        box-shadow: 0.5px 0.5px 0.5px #353839;
+    }
 `
 export const SubmitButton = styled.button`
     align-self: flex-end;

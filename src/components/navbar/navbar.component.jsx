@@ -4,7 +4,6 @@ import {
     FaLinkedin,
 } from 'react-icons/fa';
 import { 
-    BsFileText,
     BsBriefcase,
     BsPersonFill,
     BsEnvelope,
@@ -43,10 +42,6 @@ const Navbar = () => {
                 <MenuItem to='/contactme' activeClassName='active'> 
                     <BsEnvelope/>
                     <MenuItemTitle>Contacto</MenuItemTitle> 
-                </MenuItem>
-                <MenuItem to='/resume' activeClassName='active'> 
-                    <BsFileText/> 
-                    <MenuItemTitle>CV</MenuItemTitle>
                 </MenuItem>
                 <MenuItem to='/portfolio' activeClassName='active'> 
                     <BsBriefcase/> 

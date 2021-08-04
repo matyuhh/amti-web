@@ -73,7 +73,6 @@ export const SocialLink = styled.a`
     margin: 0 5px;
     color: white;
     transition: 0.2s;
-
     &:hover {
         opacity: 0.6;
     }
@@ -94,7 +93,8 @@ export const MenuItem = styled(NavLink)`
     align-items: center;
     text-align: center;
     transition: 0.2s;
-
+    text-decoration: none;
+    list-style: none;
     &:hover {
         opacity: 0.6;
     }

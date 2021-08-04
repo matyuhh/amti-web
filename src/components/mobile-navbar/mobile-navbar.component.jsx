@@ -23,7 +23,6 @@ const MobileNavbar = () => {
                     <MobileWrapper>
                         <MobileItem exact to='/' onClick={toggle} activeClassName='active'>Sobre mí</MobileItem>
                         <MobileItem to='/contactme' onClick={toggle} activeClassName='active'>Contacto</MobileItem>
-                        <MobileItem to='/resume' onClick={toggle} activeClassName='active'>CV</MobileItem>
                         <MobileItem to='/portfolio' onClick={toggle} activeClassName='active'>Portfolio</MobileItem>
                     </MobileWrapper>
             </MobileContainer>

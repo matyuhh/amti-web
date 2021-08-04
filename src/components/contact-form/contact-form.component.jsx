@@ -69,6 +69,7 @@ const ContactForm = () => {
                     <FormInputWrapper>
                         <FormLabel>Mensaje</FormLabel>
                         <FormTextArea
+                            rows='10'
                             type='text'
                             name='message'
                             placeholder='Tu mensaje'
