@@ -1,3 +1,3 @@
-# My own website to be uploaded at https://matiasgutierrez.com.ar
+# My own website/portfolio uploaded at https://matiasgutierrez.com.ar
 
 Made with React 

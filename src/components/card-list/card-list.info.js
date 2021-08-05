@@ -9,7 +9,7 @@ export const cardInfo = [
         image: ClothImage,
         title: "Cloth Ecommerce",
         description: 'Hecho con ReactJS para el curso de Andre Naegoie. Uso de Redux, ReduxThunk, ReduxSaga y Stripe.',
-        url: '/'
+        url: 'https://cloth-ecommerce-amti.herokuapp.com/'
     },
     {
         id: 2,
