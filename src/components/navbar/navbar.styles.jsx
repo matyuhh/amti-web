@@ -2,12 +2,12 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 export const ContainerNavbar = styled.nav`
-    position: absolute;
+    position: fixed;
     background-color: #353839;
     color: white;
     display: flex;
     width: 30vw;
-    height: 100vh;
+    height: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
