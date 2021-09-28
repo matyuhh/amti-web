@@ -79,9 +79,10 @@ export const SocialLink = styled.a`
 `
 
 export const MenuContainer = styled.div`
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-gap: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 60px;
     margin-bottom: 30px;
 `;

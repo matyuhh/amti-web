@@ -29,8 +29,8 @@ const Navbar = () => {
                 <MenuH1>Matías Gutiérrez</MenuH1>
                 <MenuH2>Fullstack Dev</MenuH2>
                 <SocialMedia>
-                    <SocialLink href='https://github.com/matyuhh'><FaGithub/></SocialLink>
-                    <SocialLink href='https://www.linkedin.com/in/mat%C3%ADas-valent%C3%ADn-guti%C3%A9rrez-315726124/'><FaLinkedin/></SocialLink>
+                    <SocialLink href='https://github.com/matyuhh' target='_blank'><FaGithub/></SocialLink>
+                    <SocialLink href='https://www.linkedin.com/in/mat%C3%ADas-valent%C3%ADn-guti%C3%A9rrez-315726124/' target='_blank'><FaLinkedin/></SocialLink>
                 </SocialMedia>
             </MenuTitle>
             

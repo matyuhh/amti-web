@@ -5,10 +5,10 @@ export const CardListContainer = styled.div`
     grid-template-columns: repeat(2, 360px);
     grid-template-rows: repeat(2, 360px);
     grid-gap: 20px;
+    margin-top: 50px;
 
     @media screen and (max-width: 1024px){
-        grid-template-columns: repeat(1, 360px);
-        grid-template-rows: repeat(1, 360px);
-        grid-gap: 20px;
+        display: flex;
+        flex-direction: column;
     }
 `
