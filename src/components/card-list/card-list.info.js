@@ -17,7 +17,7 @@ export const cardInfo = [
         image: PokedexImage,
         title: "Pokedex For Oldies",
         description: 'Pokedex de primera generación hecha en ReactJS. Interactua con una API de donde trae los datos.',
-        url: '/'
+        url: 'https://pokedex-for-oldies.vercel.app/'
     },
     {
         id: 3,
@@ -31,7 +31,7 @@ export const cardInfo = [
         image: SolidityImage,
         title: "CryptoFunding",
         description: 'Diseñada con NextJS, web3 y Solidity. Pseudoclon de Kickstarter pero con el uso de  Ethereum.',
-        url: 'https://cryptofunding-3c2diuwpu-matyuhh.vercel.app/'
+        url: 'https://cryptofunding.vercel.app'
     }
 
 ]
