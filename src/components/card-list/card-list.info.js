@@ -3,7 +3,7 @@ import PokedexImage from '../../assets/pokedex-for-oldies.PNG'
 import YelpCampImage from '../../assets/yelp-camp.PNG'
 import SolidityImage from '../../assets/solidity.PNG'
 import TodoSitiosImage from '../../assets/todositios.PNG'
-
+import LotteryImage from '../../assets/lottery.PNG'
 
 export const cardInfo = [
     {
@@ -40,6 +40,13 @@ export const cardInfo = [
         title: "Todositios",
         description: 'Proyecto para revampear el sitio hecho en Wordpress Todositios ( https://todositios.com/ar/ ) a React.',
         url: 'https://todositios.vercel.app/'
+    },
+    {
+        id: 6,
+        image: LotteryImage,
+        title: "CryptoLottery",
+        description: 'Lotería Ethereum usando React, Solidity y web3',
+        url: 'https://cryptolottery.vercel.app/'
     }
 
 ]

@@ -6,6 +6,7 @@ export const CardListContainer = styled.div`
     grid-template-rows: repeat(2, 360px);
     grid-gap: 20px;
     margin-top: 50px;
+    margin-bottom: 50px;
 
     @media screen and (max-width: 1024px){
         display: flex;
