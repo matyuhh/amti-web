@@ -26,9 +26,9 @@ const classes = {
 };
 
 const navbarItems: NavbarItemInterface[] = [
-  { text: 'Sobre mí' },
-  { text: 'Experiencia' },
-  { text: 'Contacto' },
+  { text: 'About me' },
+  { text: 'Experience' },
+  { text: 'Contact' },
 ];
 
 const Navbar = () => (
