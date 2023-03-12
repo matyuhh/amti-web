@@ -1,1 +1,4 @@
-export interface NavbarItemInterface { text: string }
+export interface NavbarItemInterface {
+  icon: JSX.Element;
+  href: string;
+}

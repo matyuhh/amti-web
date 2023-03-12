@@ -1,25 +1,25 @@
 import { memo } from 'react';
-import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
+import Link from '@mui/material/Link';
 
 import { NavbarItemInterface } from '../../interfaces/navbar';
 
 const classes = {
-  navbarItem: {
+  iconButton: {
     color: 'secondary.main',
-    padding: 0,
-    textTransform: 'none',
   },
 };
 
-const NavbarItem = ({ text }: NavbarItemInterface) => (
-  <Typography
-    variant="h5"
-    component={Button}
-    sx={classes.navbarItem}
+const NavbarItem = ({ icon, href }: NavbarItemInterface) => (
+  <Button
+    component={Link}
+    href={href}
   >
-    {text}
-  </Typography>
+    <IconButton sx={classes.iconButton}>
+      {icon}
+    </IconButton>
+  </Button>
 );
 
 export default memo(NavbarItem);
