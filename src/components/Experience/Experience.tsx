@@ -62,10 +62,7 @@ const companiesExperience: ExperienceListItemInterface[] = [
 ];
 
 const Experience = () => (
-  <List
-    component="nav"
-    aria-labelledby="nested-list-subheader"
-  >
+  <List aria-labelledby="nested-list-subheader">
     {companiesExperience.map(({
       company, companyRole, from, to, children,
     }) => (
@@ -74,6 +71,7 @@ const Experience = () => (
         companyRole={companyRole}
         from={from}
         to={to}
+        key={`${company}-${companyRole}`}
       >
         {children}
       </ExperienceListItem>

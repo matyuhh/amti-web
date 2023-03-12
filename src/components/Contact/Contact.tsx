@@ -34,7 +34,7 @@ const Contact = () => (
       Do you have any idea in mind?
     </Typography>
 
-    <Typography variant="h4" mt={1}>
+    <Typography variant="h3" mt={1} fontWeight={400}>
       Let&apos;s make it happen...
     </Typography>
 

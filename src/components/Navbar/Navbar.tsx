@@ -32,8 +32,16 @@ const classes = {
 };
 
 const navbarItems: NavbarItemInterface[] = [
-  { icon: (<GitHubIcon />), href: 'https://github.com/matyuhh' },
-  { icon: (<LinkedInIcon />), href: 'https://www.linkedin.com/in/mat%C3%ADas-valent%C3%ADn-guti%C3%A9rrez-315726124/' },
+  {
+    icon: (<GitHubIcon />),
+    href: 'https://github.com/matyuhh',
+    alt: 'github-icon',
+  },
+  {
+    icon: (<LinkedInIcon />),
+    href: 'https://www.linkedin.com/in/mat%C3%ADas-valent%C3%ADn-guti%C3%A9rrez-315726124/',
+    alt: 'linkedin-icon',
+  },
 ];
 
 const Navbar = () => (
@@ -44,7 +52,9 @@ const Navbar = () => (
         {/* <Box display={{ xs: 'none', sm: 'block' }} /> */}
 
         <Box sx={classes.itemsContainer}>
-          {navbarItems.map(({ icon, href }) => <NavbarItem icon={icon} href={href} />)}
+          {navbarItems.map(
+            ({ icon, href, alt }) => <NavbarItem icon={icon} href={href} alt={alt} key={alt} />,
+          )}
         </Box>
 
         {/* <Box>
