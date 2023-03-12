@@ -5,18 +5,12 @@ import Link from '@mui/material/Link';
 
 import { NavbarItemInterface } from '../../interfaces/navbar';
 
-const classes = {
-  iconButton: {
-    color: 'secondary.main',
-  },
-};
-
 const NavbarItem = ({ icon, href }: NavbarItemInterface) => (
   <Button
     component={Link}
     href={href}
   >
-    <IconButton sx={classes.iconButton}>
+    <IconButton color="secondary">
       {icon}
     </IconButton>
   </Button>

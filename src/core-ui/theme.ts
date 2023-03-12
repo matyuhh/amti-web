@@ -7,6 +7,7 @@ import colors from './colors';
 
 const theme = createTheme({
   palette: {
+    mode: 'light',
     primary: {
       main: colors.black,
     },
@@ -28,41 +29,35 @@ const theme = createTheme({
     fontFamily: ['Inter', 'sans-serif'].join(','),
     h1: {
       fontWeight: 600,
-      fontSize: '24px',
-      lineHeight: '29.05px',
+      fontSize: '36px',
+      lineHeight: '43.60px',
     },
     h2: {
-      fontWeight: 500,
-      fontSize: '20px',
-      lineHeight: '24.2px',
+      fontWeight: 600,
+      fontSize: '30px',
+      lineHeight: '36.75px',
     },
     h3: {
-      fontWeight: 700,
-      fontSize: '16px',
-      lineHeight: '18px',
+      fontWeight: 500,
+      fontSize: '24px',
+      lineHeight: '27px',
       letterSpacing: 0.15,
     },
     h4: {
-      fontWeight: 700,
-      fontSize: '14px',
-      lineHeight: '18px',
+      fontWeight: 400,
+      fontSize: '21px',
+      lineHeight: '27px',
       letterSpacing: 0.15,
     },
     h5: {
       fontWeight: 400,
-      fontSize: '14px',
-      lineHeight: '18px',
+      fontSize: '21px',
+      lineHeight: '27px',
     },
     h6: {
       fontWeight: 500,
-      fontSize: '12px',
-      lineHeight: '13px',
-    },
-    subtitle1: {
-      fontSize: '11px',
-      fontWeight: 500,
-      lineHeight: '13.31px',
-      letterSpacing: '0.15px',
+      fontSize: '18px',
+      lineHeight: '19px',
     },
   },
   components: {
@@ -109,6 +104,43 @@ const theme = createTheme({
           '@media (min-width: 600px)': {
             minHeight: '45px',
           },
+        },
+      },
+    },
+    MuiList: {
+      styleOverrides: {
+        root: {
+          width: '100%',
+          minWidth: 320,
+          bgcolor: 'background.paper',
+          padding: '0px 32px',
+        },
+      },
+    },
+    MuiListItem: {
+      styleOverrides: {
+        root: {
+          display: 'flex',
+          flexDirection: 'column',
+          padding: '8px 0px',
+        },
+      },
+    },
+    MuiListItemButton: {
+      styleOverrides: {
+        root: {
+          minWidth: '320px',
+          display: 'flex',
+          width: '100%',
+          justifyContent: 'space-between',
+          padding: '8px 0px',
+        },
+      },
+    },
+    MuiTypography: {
+      styleOverrides: {
+        root: {
+          color: 'text.primary',
         },
       },
     },

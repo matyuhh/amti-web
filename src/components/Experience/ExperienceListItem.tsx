@@ -10,17 +10,7 @@ import Divider from '@mui/material/Divider';
 import { ExperienceListItemInterface } from '../../interfaces/experience';
 
 const classes = {
-  listItem: {
-    display: 'flex',
-    flexDirection: 'column',
-    padding: '8px 0px',
-  },
   experienceButton: {
-    minWidth: '320px',
-    display: 'flex',
-    width: '100%',
-    justifyContent: 'space-between',
-    padding: '8px 0px',
     flexDirection: { xs: 'column', sm: 'row' },
   },
   leftExperienceButtonData: {
@@ -47,21 +37,21 @@ const ExperienceListItem = ({
 
   return (
     <>
-      <ListItem sx={classes.listItem}>
+      <ListItem>
 
         <ListItemButton onClick={handleClick} sx={classes.experienceButton}>
           <Box sx={classes.leftExperienceButtonData}>
-            <Typography variant="h3" color={open ? 'error.main' : ''}>
+            <Typography variant="h4" color={open ? 'error.main' : ''} fontWeight={600}>
               {company}
             </Typography>
             <Box sx={classes.companyRole}>
-              <Typography variant="h5">
+              <Typography variant="h5" fontWeight={500}>
                 {companyRole}
               </Typography>
             </Box>
           </Box>
           <Box>
-            <Typography variant="h4">
+            <Typography variant="h4" fontWeight={600}>
               {`${from} - ${to}`}
             </Typography>
           </Box>

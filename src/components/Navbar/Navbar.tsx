@@ -19,7 +19,8 @@ const classes = {
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between',
+    // justifyContent: 'space-between', TO DO: Dark mode
+    justifyContent: 'center',
     px: 3.5,
   },
   itemsContainer: {
@@ -28,7 +29,6 @@ const classes = {
     display: 'flex',
     justifyContent: 'space-around',
   },
-  darkModeSwitch: { color: 'secondary.main' },
 };
 
 const navbarItems: NavbarItemInterface[] = [
@@ -41,17 +41,17 @@ const Navbar = () => (
     <Box sx={classes.container}>
       <Toolbar sx={classes.toolbar}>
 
-        <Box display={{ xs: 'none', sm: 'block' }} />
+        {/* <Box display={{ xs: 'none', sm: 'block' }} /> */}
 
         <Box sx={classes.itemsContainer}>
           {navbarItems.map(({ icon, href }) => <NavbarItem icon={icon} href={href} />)}
         </Box>
 
-        <Box>
-          <IconButton sx={classes.darkModeSwitch}>
+        {/* <Box>
+          <IconButton color="secondary">
             <DarkModeIcon />
           </IconButton>
-        </Box>
+        </Box> */}
 
       </Toolbar>
     </Box>

@@ -1,6 +1,6 @@
 import { memo } from 'react';
-import ListSubheader from '@mui/material/ListSubheader';
 import List from '@mui/material/List';
+import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
 import ExperienceListItem from './ExperienceListItem';
@@ -13,7 +13,7 @@ const companiesExperience: ExperienceListItemInterface[] = [
     from: 'NOV 2021',
     to: 'PRESENT',
     children: (
-      <>
+      <Box pt={1}>
         <Typography variant="h5">
           Web application development for systems of different types/industries.
         </Typography>
@@ -37,7 +37,7 @@ const companiesExperience: ExperienceListItemInterface[] = [
         <Typography variant="h5">
           + SQL Server, .NET Web APIs, Microsoft Azure, Docker.
         </Typography>
-      </>
+      </Box>
     ),
   },
   {
@@ -46,7 +46,7 @@ const companiesExperience: ExperienceListItemInterface[] = [
     from: 'APR 2018',
     to: 'NOV 2021',
     children: (
-      <>
+      <Box pt={1}>
         <Typography variant="h5">
           + Linux, Unix, Windows, Openshift, AWS.
         </Typography>
@@ -56,30 +56,15 @@ const companiesExperience: ExperienceListItemInterface[] = [
         <Typography variant="h5">
           + Grafana, Naemon, Jira, Kibana, Elastic, Datadog, Docker, Gitlab.
         </Typography>
-      </>
+      </Box>
     ),
   },
 ];
 
-const classes = {
-  list: {
-    width: '100%',
-    minWidth: 320,
-    bgcolor: 'background.paper',
-    px: '32px',
-  },
-};
-
 const Experience = () => (
   <List
-    sx={classes.list}
     component="nav"
     aria-labelledby="nested-list-subheader"
-    subheader={(
-      <ListSubheader component="div" id="nested-list-subheader">
-        Nested List Items
-      </ListSubheader>
-      )}
   >
     {companiesExperience.map(({
       company, companyRole, from, to, children,
