@@ -53,7 +53,7 @@ const Navbar = () => (
 
         <Box sx={classes.itemsContainer}>
           {navbarItems.map(
-            ({ icon, href, alt }) => <NavbarItem icon={icon} href={href} alt={alt} />,
+            ({ icon, href, alt }) => <NavbarItem icon={icon} href={href} alt={alt} key={alt} />,
           )}
         </Box>
 

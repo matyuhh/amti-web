@@ -71,6 +71,7 @@ const Experience = () => (
         companyRole={companyRole}
         from={from}
         to={to}
+        key={`${company}-${companyRole}`}
       >
         {children}
       </ExperienceListItem>
