@@ -8,7 +8,6 @@ import ListItem from '@mui/material/ListItem';
 import Divider from '@mui/material/Divider';
 
 import { ExperienceListItemInterface } from '../../interfaces/experience';
-import colors from '../../core-ui/colors';
 
 const classes = {
   listItem: {
@@ -30,7 +29,8 @@ const classes = {
   },
   companyRole: {
     ml: 1,
-    border: `1px solid ${colors.black}`,
+    border: '1px solid',
+    borderColor: 'primary.main',
     borderRadius: '15px',
     padding: '5px',
   },

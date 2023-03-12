@@ -4,8 +4,6 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Link } from '@mui/material';
 
-import colors from '../../core-ui/colors';
-
 const classes = {
   container: {
     padding: '48px 20px',
@@ -18,11 +16,12 @@ const classes = {
   mailButton: {
     padding: '10px',
     borderRadius: '15px',
-    border: `1px solid ${colors.black}`,
-    background: colors.red,
-    color: colors.white,
+    border: '1px solid',
+    borderColor: 'primary.main',
+    bgcolor: 'error.main',
+    color: 'secondary.main',
     ':hover': {
-      color: colors.black,
+      color: 'primary.main',
     },
     mt: 2,
     textTransform: 'none',
