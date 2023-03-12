@@ -1,7 +1,10 @@
 import { memo } from 'react';
 import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
+
 import Navbar from './components/Navbar/Navbar';
+import AboutMe from './components/AboutMe/AboutMe';
+import Experience from './components/Experience/Experience';
+import Contact from './components/Contact/Contact';
 
 const classes = {
   app: {
@@ -10,14 +13,22 @@ const classes = {
     bg: 'background.paper',
     flexDirection: 'column',
   },
+  body: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    width: '100%',
+  },
 };
 
 const App = () => (
   <Box className="App" sx={classes.app}>
     <Navbar />
-    <Typography variant="h1">
-      REVAMP SPA
-    </Typography>
+    <Box sx={classes.body}>
+      <AboutMe />
+      <Experience />
+      <Contact />
+    </Box>
   </Box>
 );
 
