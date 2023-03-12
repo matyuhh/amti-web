@@ -5,12 +5,13 @@ import Link from '@mui/material/Link';
 
 import { NavbarItemInterface } from '../../interfaces/navbar';
 
-const NavbarItem = ({ icon, href }: NavbarItemInterface) => (
+const NavbarItem = ({ icon, href, alt }: NavbarItemInterface) => (
   <Button
     component={Link}
     href={href}
+    aria-label={alt}
   >
-    <IconButton color="secondary">
+    <IconButton color="secondary" aria-label={alt}>
       {icon}
     </IconButton>
   </Button>
