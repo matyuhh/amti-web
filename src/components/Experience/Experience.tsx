@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import { memo } from 'react';
 import List from '@mui/material/List';
 import Box from '@mui/material/Box';
@@ -8,34 +9,47 @@ import { ExperienceListItemInterface } from '../../interfaces/experience';
 
 const companiesExperience: ExperienceListItemInterface[] = [
   {
-    company: 'Tupaca',
+    company: 'Accenture',
     companyRole: 'Fullstack Developer',
-    from: 'NOV 2021',
+    from: 'JUN 2023',
     to: 'PRESENT',
     children: (
       <Box pt={1}>
         <Typography variant="h5">
-          Web application development for systems of different types/industries.
+          - Development of web applications for the metallurgical industry with .NET and React.
         </Typography>
         <br />
         <Typography variant="h5">
-          Stack Frontend:
+          Stack: React, .NET, Microsoft SQL Server, Azure, PostgreSQL, Jest.
+        </Typography>
+      </Box>
+    ),
+  },
+  {
+    company: 'Tupaca',
+    companyRole: 'Fullstack Developer',
+    from: 'NOV 2021',
+    to: 'JUN 2023',
+    children: (
+      <Box pt={1}>
+        <Typography variant="h5">
+          - Construction of SDM, with NextJS, integrated with AD, Oracle and MongoDB for a large international chain in the hotel industry, from start to finish, in a timely manner.
         </Typography>
         <Typography variant="h5">
-          + Typescript, Javascript.
+          - Development and deployment in Azure, of a webapp for business management, made with .NET and React + Redux.
         </Typography>
         <Typography variant="h5">
-          + React, Redux, MaterialUI, NextJS, Gatsby.
+          - Creation of unit tests, application of design/architecture patterns and good code practices.
+        </Typography>
+        <Typography variant="h5">
+          - Carrying out and participating in the code reviews process, to ensure high quality code.
+        </Typography>
+        <Typography variant="h5">
+          - Timely delivery of projects, being a developer involved in business knowledge.
         </Typography>
         <br />
         <Typography variant="h5">
-          Stack Backend:
-        </Typography>
-        <Typography variant="h5">
-          + MongoDB, Express, Node.js, NestJS, Typescript.
-        </Typography>
-        <Typography variant="h5">
-          + SQL Server, .NET Web APIs, Microsoft Azure, Docker.
+          Stack: Typescript, React, Redux, NextJS, MongoDB, Express, Node.js, .NET, Microsoft SQL Server, Azure, Docker, Jest.
         </Typography>
       </Box>
     ),
@@ -48,13 +62,17 @@ const companiesExperience: ExperienceListItemInterface[] = [
     children: (
       <Box pt={1}>
         <Typography variant="h5">
-          + Linux, Unix, Windows, Openshift, AWS.
+          - Improvement in monitoring dashboards for Bank applications, in Kibana, Grafana, Elastic, Datadog (among others).
         </Typography>
         <Typography variant="h5">
-          + Python for automation.
+          - Automation of reports for monitoring in Python.
         </Typography>
         <Typography variant="h5">
-          + Grafana, Naemon, Jira, Kibana, Elastic, Datadog, Docker, Gitlab.
+          - Monitoring of incidents in production and development environments.
+        </Typography>
+        <br />
+        <Typography variant="h5">
+          Stack: Grafana, Naemon, Kibana, Elastic, Datadog, Docker, Gitlab, Openshift, AWS, Python.
         </Typography>
       </Box>
     ),

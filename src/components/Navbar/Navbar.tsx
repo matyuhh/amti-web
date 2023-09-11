@@ -2,11 +2,8 @@ import { memo } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import DarkModeIcon from '@mui/icons-material/DarkMode';
-import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 
 import NavbarItem from './NavbarItem';
 import { NavbarItemInterface } from '../../interfaces/navbar';
@@ -19,7 +16,6 @@ const classes = {
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
-    // justifyContent: 'space-between', TO DO: Dark mode
     justifyContent: 'center',
     px: 3.5,
   },
@@ -48,21 +44,11 @@ const Navbar = () => (
   <AppBar position="static" sx={classes.appBar}>
     <Box sx={classes.container}>
       <Toolbar sx={classes.toolbar}>
-
-        {/* <Box display={{ xs: 'none', sm: 'block' }} /> */}
-
         <Box sx={classes.itemsContainer}>
           {navbarItems.map(
             ({ icon, href, alt }) => <NavbarItem icon={icon} href={href} alt={alt} key={alt} />,
           )}
         </Box>
-
-        {/* <Box>
-          <IconButton color="secondary">
-            <DarkModeIcon />
-          </IconButton>
-        </Box> */}
-
       </Toolbar>
     </Box>
   </AppBar>

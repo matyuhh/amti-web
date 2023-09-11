@@ -9,6 +9,8 @@ const classes = {
   },
 };
 
+const description = 'Fullstack developer with more than 2 years of experience building and maintaining scalable and innovative applications. Able to develop clean architectures, optimized to improve code performance. Expert in technologies such as Typescript, JavaScript, .NET, NodeJS, Reactjs/Redux and MongoDB; as well as in DevOps and Azure.';
+
 const AboutMe = () => (
   <Box sx={classes.container}>
     <Typography variant="h1">
@@ -16,7 +18,7 @@ const AboutMe = () => (
     </Typography>
 
     <Typography variant="h3" mt={2}>
-      A fullstack Developer with a strong Infrastructure/Ops background. MERN, Python & .NET/SQL.
+      {description}
     </Typography>
   </Box>
 );
