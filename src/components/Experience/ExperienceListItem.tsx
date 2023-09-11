@@ -23,9 +23,13 @@ const classes = {
     borderColor: 'primary.main',
     borderRadius: '15px',
     padding: '5px',
+    textAlign: 'center',
   },
   children: {
     width: '100%',
+  },
+  list: {
+    pl: { xs: 0, md: 4 },
   },
 };
 const ExperienceListItem = ({
@@ -59,7 +63,7 @@ const ExperienceListItem = ({
         </ListItemButton>
 
         <Collapse in={open} timeout="auto" unmountOnExit sx={classes.children}>
-          <List component="div">
+          <List component="div" sx={classes.list}>
             {children}
           </List>
         </Collapse>
