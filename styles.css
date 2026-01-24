@@ -9,118 +9,241 @@ html {
 }
 
 body {
-  font-family: sans-serif;
-  background-color: #FFFFFF;
-  color: #353839;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #f0f0f3 100%);
+  color: #2c3e50;
   min-height: 100vh;
+  line-height: 1.6;
 }
 
+/* Typography */
 h1 {
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 43.60px;
-  margin: 16px 0;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.2;
+  margin: 0;
 }
 
 h2 {
   font-weight: 600;
-  font-size: 30px;
-  line-height: 36.75px;
+  font-size: 32px;
+  line-height: 1.3;
+  color: #2c3e50;
 }
 
 h3 {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 24px;
-  line-height: 27px;
-  letter-spacing: 0.15px;
-  margin-top: 16px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  color: #2c3e50;
 }
 
-h4 {
-  font-weight: 400;
-  font-size: 21px;
-  line-height: 27px;
-  letter-spacing: 0.15px;
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a202c;
+  text-align: center;
+  margin-bottom: 32px;
+  position: relative;
+  padding-bottom: 12px;
 }
 
-h5 {
-  font-weight: 400;
-  font-size: 21px;
-  line-height: 27px;
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #C62828, #E57373);
+  border-radius: 2px;
 }
 
+/* Navbar */
 .navbar {
-  background-color: #353839;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
   width: 100%;
-  box-shadow: none;
-  box-sizing: border-box;
-  height: 45px;
-  min-height: 45px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 60px;
+  min-height: 60px;
 }
 
 .navbar-container {
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 0 28px;
+  justify-content: flex-end;
+  padding: 0 32px;
   height: 100%;
 }
 
 .navbar-items {
-  max-width: 240px;
-  width: 100%;
   display: flex;
-  justify-content: space-around;
+  gap: 16px;
 }
 
 .navbar-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 8px;
+  padding: 10px;
   color: #FFFFFF;
   text-decoration: none;
-  transition: opacity 0.3s;
+  transition: all 0.3s ease;
+  border-radius: 8px;
 }
 
 .navbar-link:hover {
-  opacity: 0.8;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
 }
 
 .navbar-icon {
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
 }
 
+/* Main Body */
 .app-body {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
 }
 
-.about-me {
-  padding: 48px 20px;
+/* Hero Section */
+.hero {
+  width: 100%;
+  padding: 80px 0;
   text-align: center;
+  background: white;
+  border-radius: 20px;
+  margin: 40px 0;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
 }
 
-.about-me h2 {
-  font-weight: 400;
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
+.greeting {
+  font-size: 20px;
+  color: #5a6c7d;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.hero-name {
+  font-size: 56px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #C62828 0%, #E57373 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 16px;
+}
+
+.hero-title {
+  font-size: 32px;
+  color: #2c3e50;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.hero-description {
+  font-size: 20px;
+  color: #5a6c7d;
+  line-height: 1.6;
+}
+
+/* Skills Section */
+.skills {
+  width: 100%;
+  padding: 48px 32px;
+  background: white;
+  border-radius: 20px;
+  margin: 40px 0;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+}
+
+.skill-category h3 {
+  color: #2c3e50;
+  font-size: 16px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  color: #2c3e50;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid #dee2e6;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.skill-tag:hover {
+  background: linear-gradient(135deg, #C62828 0%, #E57373 100%);
+  color: white;
+  border-color: #C62828;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(198, 40, 40, 0.25);
+}
+
+/* Experience Section */
 .experience {
   width: 100%;
+  padding: 60px 0;
+  background: white;
+  border-radius: 20px;
+  margin: 40px 0;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
 }
 
 .experience-list {
   list-style: none;
-  padding: 0;
+  padding: 0 32px;
   margin: 0;
 }
 
 .experience-item {
   width: 100%;
+  margin-bottom: 8px;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.experience-item:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .experience-button {
@@ -128,133 +251,161 @@ h5 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 16px;
-  background: none;
-  border: none;
+  padding: 24px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border: 2px solid #e9ecef;
+  border-radius: 12px;
   cursor: pointer;
   text-align: left;
-  transition: background-color 0.3s;
+  transition: all 0.3s ease;
 }
 
 .experience-button:hover {
-  background-color: rgba(0, 0, 0, 0.04);
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  border-color: #C62828;
+  transform: translateY(-2px);
 }
 
 .experience-left {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 8px;
+  gap: 12px;
+  margin-bottom: 12px;
 }
 
 .company-name {
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 22px;
+  color: #1a202c;
+  margin: 0;
 }
 
 .company-name.active {
-  color: #F44336;
+  color: #C62828;
 }
 
 .company-role {
-  margin-left: 8px;
-  border: 1px solid #353839;
-  border-radius: 15px;
-  padding: 5px;
-  text-align: center;
+  background: linear-gradient(135deg, #C62828 0%, #E57373 100%);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 16px;
 }
 
 .company-role p {
-  font-weight: 500;
-  font-size: 21px;
-  line-height: 27px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
   margin: 0;
 }
 
 .experience-right p {
   font-weight: 600;
-  font-size: 21px;
-  line-height: 27px;
-  letter-spacing: 0.15px;
+  font-size: 16px;
+  color: #5a6c7d;
   margin: 0;
 }
 
 .experience-details {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease-out;
-  padding-left: 0;
+  transition: max-height 0.4s ease-out;
+  background: #f8f9fa;
+  border-radius: 0 0 12px 12px;
 }
 
 .experience-details.open {
   max-height: 1000px;
-  transition: max-height 0.5s ease-in;
+  transition: max-height 0.6s ease-in;
+  margin-top: -12px;
 }
 
 .experience-content {
-  padding: 16px 0 16px 0;
+  padding: 24px 32px;
 }
 
 .experience-content p {
-  font-size: 21px;
-  line-height: 27px;
-  margin: 0 0 8px 0;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #4a5568;
+  margin: 0 0 12px 0;
 }
 
 .divider {
-  border: none;
-  border-top: 1px solid rgba(0, 0, 0, 0.12);
-  margin: 0;
+  display: none;
 }
 
+/* Contact Section */
 .contact {
-  padding: 48px 20px;
+  width: 100%;
+  padding: 48px 32px;
   text-align: center;
-  background-color: #FFFFFF;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  margin-top: 60px;
 }
 
+.contact-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.contact-subtitle {
+  font-size: 16px;
+  color: #ecf0f1;
+  margin-bottom: 24px;
+}
+
+.contact-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  border-radius: 50px;
+  border: 2px solid white;
+  background-color: white;
+  color: #2c3e50;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-button:hover {
+  background-color: #C62828;
+  border-color: #C62828;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(198, 40, 40, 0.4);
+}
+
+.email-icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* Responsive Design */
 @media (min-width: 1024px) {
   .contact {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    width: 100%;
     z-index: 100;
+    margin-top: 0;
   }
   
-  .app-body {
+  body {
     padding-bottom: 200px;
   }
-}
-
-.contact h3 {
-  font-weight: 400;
-  margin-top: 8px;
-}
-
-.contact-button-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 16px;
-}
-
-.contact-button {
-  padding: 10px;
-  border-radius: 15px;
-  border: 1px solid #353839;
-  background-color: #C62828;
-  color: #FFFFFF;
-  text-decoration: none;
-  display: inline-block;
-  transition: all 0.3s;
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.contact-button:hover {
-  background-color: #353839;
-  color: #FFFFFF;
 }
 
 @media (min-width: 600px) {
@@ -267,39 +418,55 @@ h5 {
   .experience-left {
     margin-bottom: 0;
   }
-
-  .experience-content {
-    padding-left: 64px;
-  }
 }
 
-@media (max-width: 599px) {
-  h1 {
-    font-size: 28px;
-    line-height: 34px;
+@media (max-width: 768px) {
+  .hero-name {
+    font-size: 40px;
   }
 
-  h2 {
+  .hero-title {
     font-size: 24px;
-    line-height: 30px;
   }
 
-  h3 {
-    font-size: 20px;
-    line-height: 24px;
+  .hero-description {
+    font-size: 16px;
   }
 
-  h4 {
-    font-size: 18px;
-    line-height: 24px;
+  .section-title {
+    font-size: 28px;
   }
 
-  h5 {
-    font-size: 18px;
-    line-height: 24px;
+  .skills-grid {
+    grid-template-columns: 1fr;
+    padding: 0 24px;
   }
-  
+
+  .experience-list {
+    padding: 0 16px;
+  }
+
+  .experience-button {
+    padding: 20px;
+  }
+
   .experience-content {
-    padding: 16px 16px 16px 16px;
+    padding: 20px 24px;
+  }
+
+  .app-body {
+    padding: 0 16px;
+  }
+
+  .navbar-container {
+    padding: 0 16px;
+  }
+
+  .contact-title {
+    font-size: 28px;
+  }
+
+  .contact-subtitle {
+    font-size: 16px;
   }
 }

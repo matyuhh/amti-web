@@ -16,7 +16,6 @@
     <script src="app.js" defer></script>
   </head>
   <body>
-    <!-- Navbar -->
     <nav class="navbar">
       <div class="navbar-container">
         <div class="navbar-items">
@@ -35,12 +34,61 @@
     </nav>
 
     <main class="app-body">
-      <section class="about-me">
-        <h1>Hi! I'm Matías. Fullstack Developer.</h1>
-        <h2>Fullstack developer with more than 8 years of experience building and maintaining scalable and innovative applications.</h2>
+      <section class="hero">
+        <div class="hero-content">
+          <p class="greeting">Hi! I'm</p>
+          <h1 class="hero-name">Matías Gutiérrez</h1>
+          <h2 class="hero-title">Fullstack Developer</h2>
+          <p class="hero-description">8+ years building scalable web applications with modern technologies</p>
+        </div>
+      </section>
+
+      <section class="skills">
+        <h2 class="section-title">Core Technologies</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Frontend</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">Next.js</span>
+              <span class="skill-tag">Redux</span>
+              <span class="skill-tag">React Native</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Backend</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">.NET</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">NestJS</span>
+              <span class="skill-tag">Express</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Database & Cloud</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">SQL Server</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">Azure</span>
+              <span class="skill-tag">AWS</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>DevOps & Tools</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">CI/CD</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Kafka</span>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="experience">
+        <h2 class="section-title">Professional Experience</h2>
         <ul class="experience-list">
           <li class="experience-item">
             <button class="experience-button" data-company="accenture">
@@ -116,10 +164,15 @@
     </main>
 
     <section class="contact">
-      <h2>Do you have any idea in mind?</h2>
-      <h3>Let's make it happen...</h3>
+      <h2 class="contact-title">Let's Build Something Great Together</h2>
+      <p class="contact-subtitle">Have a project in mind? Let's discuss how I can help.</p>
       <div class="contact-button-container">
-        <a href="mailto:matiasvgutierrez@hotmail.com" class="contact-button">matiasvgutierrez@hotmail.com</a>
+        <a href="mailto:matiasvgutierrez@hotmail.com" class="contact-button">
+          <svg class="email-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+          </svg>
+          matiasvgutierrez@hotmail.com
+        </a>
       </div>
     </section>
   </body>
