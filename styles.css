@@ -1,0 +1,321 @@
+/* Font Faces */
+@font-face {
+  font-family: 'Inter';
+  font-weight: normal;
+  font-style: normal;
+  src: url('./Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: bold;
+  font-style: normal;
+  src: url('./Inter-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-style: normal;
+  src: url('./Inter-Medium.ttf') format('truetype');
+}
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #FFFFFF;
+  color: #353839;
+  min-height: 100vh;
+}
+
+/* Typography */
+h1 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43.60px;
+  margin: 16px 0;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36.75px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 27px;
+  letter-spacing: 0.15px;
+  margin-top: 16px;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 27px;
+  letter-spacing: 0.15px;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 27px;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #353839;
+  width: 100%;
+  box-shadow: none;
+  box-sizing: border-box;
+  height: 45px;
+  min-height: 45px;
+}
+
+.navbar-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 28px;
+  height: 100%;
+}
+
+.navbar-items {
+  max-width: 240px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.navbar-link:hover {
+  opacity: 0.8;
+}
+
+.navbar-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Main App Body */
+.app-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* About Me Section */
+.about-me {
+  padding: 48px 20px;
+  text-align: center;
+}
+
+.about-me h3 {
+  font-weight: 400;
+}
+
+/* Experience Section */
+.experience {
+  width: 100%;
+}
+
+.experience-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.experience-item {
+  width: 100%;
+}
+
+.experience-button {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.3s;
+}
+
+.experience-button:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.experience-left {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.company-name {
+  font-weight: 600;
+}
+
+.company-name.active {
+  color: #F44336;
+}
+
+.company-role {
+  margin-left: 8px;
+  border: 1px solid #353839;
+  border-radius: 15px;
+  padding: 5px;
+  text-align: center;
+}
+
+.company-role h5 {
+  font-weight: 500;
+}
+
+.experience-right h4 {
+  font-weight: 600;
+}
+
+.experience-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  padding-left: 0;
+}
+
+.experience-details.open {
+  max-height: 1000px;
+  transition: max-height 0.5s ease-in;
+}
+
+.experience-content {
+  padding: 16px 0 16px 0;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  margin: 0;
+}
+
+/* Contact Section */
+.contact {
+  padding: 48px 20px;
+  text-align: center;
+  background-color: #FFFFFF;
+}
+
+/* Fixed contact only on desktop */
+@media (min-width: 1024px) {
+  .contact {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  .app-body {
+    padding-bottom: 200px;
+  }
+}
+
+.contact h3 {
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+.contact-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.contact-button {
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid #353839;
+  background-color: #F44336;
+  color: #FFFFFF;
+  text-decoration: none;
+  display: inline-block;
+  transition: color 0.3s;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+}
+
+.contact-button:hover {
+  color: #353839;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+  .experience-button {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .experience-left {
+    margin-bottom: 0;
+  }
+
+  .experience-content {
+    padding-left: 64px;
+  }
+}
+
+@media (max-width: 599px) {
+  h1 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  h4 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  h5 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  
+  .experience-content {
+    padding: 16px 16px 16px 16px;
+  }
+}
